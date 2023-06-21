@@ -11,8 +11,10 @@ public class Feedback {
     @Column(name = "ID")
     private Long feedbackID;
 
+    @Column(name = "RATING")
     private int rating;
 
+    @Column(name = "COMMENT")
     private String comment;
 
     @ManyToOne(fetch = FetchType.LAZY)
