@@ -14,7 +14,7 @@ public class Feedback {
     @Column(name = "RATING")
     private int rating;
 
-    @Column(name = "COMMENT")
+    @Column(name = "COMMENTS")
     private String comment;
 
     @ManyToOne(fetch = FetchType.LAZY)
