@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 import org.thewalk.TheWalkStockApp.daos.CustomerDAO;
 import org.thewalk.TheWalkStockApp.entities.Customer;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -20,5 +21,9 @@ public class CustomerService {
             return customer.get();
         } else
             return new Customer();
+    }
+
+    public List<Customer> findAllCustomers() {
+        return custDAO.findAll();
     }
 }
