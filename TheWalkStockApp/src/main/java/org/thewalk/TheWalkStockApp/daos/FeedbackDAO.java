@@ -5,5 +5,5 @@ import org.springframework.stereotype.Repository;
 import org.thewalk.TheWalkStockApp.entities.Feedback;
 
 @Repository
-public interface FeedbackDAO extends JpaRepository<Long, Feedback> {
+public interface FeedbackDAO extends JpaRepository<Feedback, Long> {
 }

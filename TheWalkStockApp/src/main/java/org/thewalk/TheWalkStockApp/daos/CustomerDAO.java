@@ -5,6 +5,6 @@ import org.springframework.stereotype.Repository;
 import org.thewalk.TheWalkStockApp.entities.Customer;
 
 @Repository
-public interface CustomerDAO extends JpaRepository<Long, Customer> {
+public interface CustomerDAO extends JpaRepository<Customer, Long> {
 
 }
