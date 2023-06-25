@@ -1,11 +1,15 @@
 package org.thewalk.TheWalkStockApp.entities;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.hibernate.annotations.GeneratorType;
 
 import javax.persistence.*;
 
 @Entity
 @Table(name = "customers")
+@Getter
+@Setter
 public class Customer {
 
     @Id
@@ -29,28 +33,28 @@ public class Customer {
         this.email = email;
     }
 
-    public Long getCustomerID() {
-        return customerID;
-    }
-
-    public void setCustomerID(Long customerID) {
-        this.customerID = customerID;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
+//    public Long getCustomerID() {
+//        return customerID;
+//    }
+//
+//    public void setCustomerID(Long customerID) {
+//        this.customerID = customerID;
+//    }
+//
+//    public String getName() {
+//        return name;
+//    }
+//
+//    public void setName(String name) {
+//        this.name = name;
+//    }
+//
+//    public String getEmail() {
+//        return email;
+//    }
+//
+//    public void setEmail(String email) {
+//        this.email = email;
+//    }
 
 }
